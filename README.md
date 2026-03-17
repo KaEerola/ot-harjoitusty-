@@ -1,3 +1,3 @@
-#Ohjelmistotekniikan harjoitustyökurssi
+# Ohjelmistotekniikan harjoitustyökurssi
 
 **Kurssia** varten tehty *palautusrepositorio*.
