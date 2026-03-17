@@ -1,0 +1,113 @@
+commit 66646fb3547f23f56cc337d57d56d65477864522
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Tue Mar 17 17:23:47 2026 +0200
+
+    file1 poistettu ja file22 nimi muutettu
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 8dc11735476dee476c5a8f3c3c8cc569f9b94321
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Tue Mar 17 17:19:46 2026 +0200
+
+    luotu uusi hakemisto ja lisätty sinne tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit a536be038fa1095309b10ff65a0424510f2116e0
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Tue Mar 17 16:56:45 2026 +0200
+
+    muutoksia molempiin tiedostoihin
+
+ eka.txt    | 3 ++-
+ kolmas.txt | 2 +-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+commit 09a49d850d9cc85e92456af3a24aa2752a54e21e
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Tue Mar 17 13:41:22 2026 +0200
+
+    vaihdettu tiedoston tiedosto.txt nimi nimeksi eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b078dd5f68caa1fceda07d324d78d1662bbaf624
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Tue Mar 17 13:38:47 2026 +0200
+
+    poistettu tiedosto toinen.txt
+
+ stuff/toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit f348dabcd0bb3d832c1bd68cf5f219aa1c8dff9a
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Tue Mar 17 13:35:30 2026 +0200
+
+    muutos tiedosto.txt
+
+ tiedosto.txt | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+commit 4ff31c75ef697aee6cab97e721cbc97228f7056d
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Tue Mar 17 13:32:50 2026 +0200
+
+    tekstin lisäys tiedosto.txt
+
+ tiedosto.txt | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+commit e5f97fcff760740731a0cf448ace1791b9a2d214
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Mon Mar 16 14:49:05 2026 +0200
+
+    siirretty tiedosto toinen toinen.txt hakemistoon stuff
+
+ toinen.txt => stuff/toinen.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit aef77dd6304d43599be220a7779aa91d8cc2d62e
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Mon Mar 16 14:47:12 2026 +0200
+
+    muokkauksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit e141e2d4ab9251eb78ad7edab5bb9733280b033f
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Mon Mar 16 14:37:31 2026 +0200
+
+    luotu tiedosto kolmast.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit c43cadcdc95624eaa588a513d9a011da9a6a57e8
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Mon Mar 16 14:14:46 2026 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit d03ee15fca7a4370c44fe63e6f05e2d2ccd55b32
+Author: KaEerola <kalle.eerola@hotmail.com>
+Date:   Mon Mar 16 14:07:23 2026 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
