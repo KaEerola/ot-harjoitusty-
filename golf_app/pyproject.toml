@@ -1,0 +1,21 @@
+[project]
+name = "golf-app"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "KaEerola",email = "kalle.eerola@hotmail.com "}
+]
+requires-python = "^3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "invoke (>=3.0.3,<4.0.0)",
+    "coverage (>=7.13.5,<8.0.0)"
+]
