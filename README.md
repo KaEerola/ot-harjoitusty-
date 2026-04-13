@@ -1,11 +1,8 @@
 # Ohjelmistotekniikan harjoitustyökurssi
 
-**Kurssia** varten tehty *palautusrepositorio*.
+Teen kurssin harjoitustyönä golfsovelluksen, jonka avulla pystyy tarkastelemaan täytettyä kierroksia, ja katsomaan tarkempia tilastoja
 
-## Tehtävät
-
-### Viikko 1
-
-[gitlog.txt](laskarit/viikko1/gitlog.txt)
-
-[komentorivi.txt](laskarit/viikko1/komentorivi.txt)
+## Dokumentaatio
+- [Vaatimusmäärittely](golf_app/dokumentaatio/vaatimusmäärittely.md)
+- [Tuntikirjanpito](golf_app/dokumentaatio/tuntikirjanpito.md)
+- [Changelog](golf_app/dokumentaatio/changelog.md)
