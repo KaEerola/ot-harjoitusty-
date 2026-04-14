@@ -10,10 +10,11 @@ class TestRoundService(unittest.TestCase):
     
     def test_add_round(self):
         round_service = RoundService()
-        round_service.add_round("Helsinki Golf Club", 85)
+        round_service.add_round("Helsinki Golf Club", 85, "2026-04-13")
 
         rounds = round_service.get_rounds()
 
         self.assertEqual(len(rounds), 1)
         self.assertEqual(rounds[0].course, "Helsinki Golf Club")
         self.assertEqual(rounds[0].score, 85)
+        self.assertEqual(rounds[0].date, "2026-04-13")
