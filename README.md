@@ -3,6 +3,9 @@
 Teen kurssin harjoitustyönä golfsovelluksen, jonka avulla pystyy tarkastelemaan täytettyä kierroksia, ja katsomaan tarkempia tilastoja
 
 ## Dokumentaatio
-- [Vaatimusmäärittely](golf_app/dokumentaatio/vaatimusmäärittely.md)
-- [Tuntikirjanpito](golf_app/dokumentaatio/tuntikirjanpito.md)
+
+- [Arkkitehtuurikuvaus](golf_app/dokumentaatio/arkkitehtuuri.md)
 - [Changelog](golf_app/dokumentaatio/changelog.md)
+- [Tuntikirjanpito](golf_app/dokumentaatio/tuntikirjanpito.md)
+- [Vaatimusmäärittely](golf_app/dokumentaatio/vaatimusmäärittely.md)
+ 
