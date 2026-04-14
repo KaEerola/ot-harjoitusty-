@@ -5,12 +5,12 @@ Sovelluksen avulla käyttäjä voi pitää kirjaa pelaamistaan golfkierroksista 
 
 ## Perusversion toiminta
 
-* Uuden kierroksen lisäys
+* Uuden kierroksen lisäys (Tehty)
     * Kierroksesta tallennetaan
-      * Pelattu kenttä
-      * Lyöntien määrä eli tulos
-      * Kierroksen päivämäärä
-* Käyttäjä näkee listan pelatuista kierroksista
+      * Pelattu kenttä (Tehty)
+      * Lyöntien määrä eli tulos (Tehty)
+      * Kierroksen päivämäärä (Tehty)
+* Käyttäjä näkee listan pelatuista kierroksista (Tehty)
 * Käyttäjä voi tarkastella kierroksiin liittyviä perustilastoja
     * Kierrosten keskiarvotulos
     * Paras kierros
