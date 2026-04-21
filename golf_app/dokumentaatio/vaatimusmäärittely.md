@@ -14,8 +14,8 @@ Sovelluksen avulla käyttäjä voi pitää kirjaa pelaamistaan golfkierroksista 
 * Käyttäjä voi tarkastella kierroksiin liittyviä perustilastoja
     * Kierrosten keskiarvotulos
     * Paras kierros
-* Käyttäjä voi poistaa haluamansa kierroksen
-* Sovellus tallentaa tiedot siten, että ne säilyvät ohjelman sulkemisen jälkeen
+* Käyttäjä voi poistaa haluamansa kierroksen (Tehty)
+* Sovellus tallentaa tiedot siten, että ne säilyvät ohjelman sulkemisen jälkeen (Tehty)
 
 ## Jatkokehitysideoita
 
