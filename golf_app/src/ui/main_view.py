@@ -1,49 +1,33 @@
 from tkinter import *
-from tkinter import messagebox
-from src.services.round_service import RoundService
-from src.services.validation_service import validate_inputs
-from datetime import date, datetime
+from src.ui.round_list_view import RoundListView
+from src.ui.add_round_view import AddRoundView
+
+
 
 class MainView:
-    def __init__(self, root):
-        self.service = RoundService()
+    def __init__(self, root, auth_service, round_service):
+        self.root = root
+        self.service = round_service
+        self.current_view = None
 
-        # Kentät
-        self.course_entry = Entry(root)
-        self.course_entry.pack()
+        self.show_list_view()
 
-        self.score_entry = Entry(root)
-        self.score_entry.pack()
+    def clear_view(self):
+        if self.current_view:
+            self.current_view.destroy()
 
-        self.date_entry = Entry(root)  # uusi kenttä
-        self.date_entry.pack()
+    def show_list_view(self):
+        self.clear_view()
+        self.current_view = RoundListView(
+            self.root,
+            self.service,
+            on_add=self.show_add_view
+        )
 
-        Button(root, text="Lisää", command=self.add_round).pack()
-
-        self.listbox = Listbox(root)
-        self.listbox.pack()
-
-    def add_round(self):
-        course = self.course_entry.get()
-        score_input = self.score_entry.get()
-        date_input = self.date_entry.get()
-
-        try:
-            course, score, date_input = validate_inputs(
-                course, score_input, date_input
-            )
-        except ValueError as e:
-            messagebox.showerror("Virhe", str(e))
-            return
-
-        self.service.add_round(course, score, date_input)
-        self.refresh()
-
-        self.course_entry.delete(0, END)
-        self.score_entry.delete(0, END)
-        self.date_entry.delete(0, END)
-
-    def refresh(self):
-        self.listbox.delete(0, END)
-        for r in self.service.get_rounds():
-            self.listbox.insert(END, f"{r.course} — {r.score} — {r.date}")
+    def show_add_view(self):
+        self.clear_view()
+        self.current_view = AddRoundView(
+            self.root,
+            self.service,
+            on_back=self.show_list_view
+        )
