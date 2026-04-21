@@ -8,7 +8,9 @@ __pycache__
 *$py.class
 
 # data files
-data/database.sqlite
-data/todos.csv
-data/test-database.sqlite
-data/test-todos.csv
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+*.json
+*.xml
