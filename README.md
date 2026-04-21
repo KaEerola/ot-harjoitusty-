@@ -9,7 +9,10 @@ Teen kurssin harjoitustyönä golfsovelluksen, jonka avulla pystyy tarkastelemaa
 - [Tuntikirjanpito](golf_app/dokumentaatio/tuntikirjanpito.md)
 - [Vaatimusmäärittely](golf_app/dokumentaatio/vaatimusmäärittely.md)
 
-## Sovelluksen asennus ohjeet
+## Release
+https://github.com/KaEerola/ot-harjoitusty-/releases/latest
+
+## Sovelluksen asennusohjeet
 1. Asenna riippuvuudet komennolla
 
 ```bash
