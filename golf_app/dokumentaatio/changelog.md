@@ -8,3 +8,8 @@
 - Käyttäjä voi poistaa kierroksen
 - Testattu että kierroksen lisäys ja poistaminen toimii RoundRepository luokan mukaan
 - Testattu myös RoundService luokan toiminta uusien muutosten jälkeen
+## Viikko 6 
+- Käyttäjä voi katsoa tilastoja syöttämiensä kierrosten osalta
+- Käytäjä voi rajata tilastoja varten huomioon otettavia kierroksia
+- Testattu uudennettua Round luokkaa
+- Testattu AuthService luokkaa ja sen tuomia validaatioita ja käyttäjän tunnistamista
