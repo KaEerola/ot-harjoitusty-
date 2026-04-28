@@ -23,4 +23,12 @@ Yhteensä viikolla 6h
 - Tiistai 2h
   
 Yhteensä viikolla 7h
-### Yhteensä projektiin käytetty aika tähän mennessä 16,5h
+## Viikko 6
+- Keskiviikko 2h
+- Torstai 3h
+- Perjantai 1h
+- Maanantai 1,5h
+- Tiistai 2h
+
+Yhteensä viikolla 9,5h
+### Yhteensä projektiin käytetty aika tähän mennessä 26h
