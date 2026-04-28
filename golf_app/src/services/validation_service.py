@@ -1,6 +1,22 @@
 from datetime import date, datetime
 
 def validate_inputs(course, score_input, date_input):
+    """Validates the input values for a new round.
+
+    Args:
+        course (str): The golf course name.
+        score_input (int): The score for the round.
+        date_input (datetime.date): The date of the round.
+
+    Raises:
+        ValueError: If any of the input values are invalid.
+        ValueError: If the course name is empty.
+        ValueError: If the score is not a positive integer.
+        ValueError: If the date is not in the correct format.
+
+    Returns:
+        tuple: A tuple containing the validated course name, score, and date.
+    """
     if not course:
         raise ValueError("Course ei voi olla tyhjä")
 

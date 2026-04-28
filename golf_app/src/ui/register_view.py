@@ -1,7 +1,16 @@
 from tkinter import ttk
 
 class RegisterView:
+    """UI view for user registration.
+    """
     def __init__(self, root, auth_service, on_success, on_back):
+        """Initializes the registration view.
+        Args:
+            root (tk.Widget): Parent widget (typically Tk root).
+            auth_service (AuthService): Service used for authentication.
+            on_success (Callable): Callback function for successful registration.
+            on_back (Callable): Callback function to return to the previous view.
+        """
         self.auth = auth_service
         self.on_success = on_success
         self.on_back = on_back
@@ -24,6 +33,12 @@ class RegisterView:
         self.message.pack()
 
     def register(self):
+        """Validates input and attempts to register the user.
+        """
+        if not self.username.get() or not self.password.get():
+            self.message.config(text="Kaikki kentät ovat pakollisia")
+            return
+
         success = self.auth.register(
             self.username.get(),
             self.password.get()
@@ -35,4 +50,6 @@ class RegisterView:
             self.message.config(text="Virhe tai käyttäjä on jo olemassa")
 
     def destroy(self):
+        """Destroys the view frame.
+        """
         self.frame.destroy()

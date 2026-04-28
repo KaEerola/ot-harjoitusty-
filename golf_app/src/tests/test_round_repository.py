@@ -2,7 +2,7 @@ import unittest
 import os
 import sqlite3
 from src.repositories.round_repository import RoundRepository
-from datetime import date
+from datetime import date, datetime
 
 class TestRoundRepository(unittest.TestCase):
 
@@ -35,15 +35,15 @@ class TestRoundRepository(unittest.TestCase):
         rounds = self.repo.get_by_user(1)
 
         self.assertEqual(len(rounds), 1)
-        self.assertEqual(rounds[0][1], "Helsinki Golf Club")
-        self.assertEqual(rounds[0][2], 85)
-        self.assertEqual(rounds[0][3], "2026-04-13")
-        self.assertEqual(rounds[0][4], 1)
-    
+        self.assertEqual(rounds[0].course, "Helsinki Golf Club")
+        self.assertEqual(rounds[0].score, 85)
+        self.assertEqual(rounds[0].date, date(2026, 4, 13))
+        self.assertEqual(rounds[0].user_id, 1)
+
     def test_delete_round(self):
         self.repo.create("Helsinki Golf Club", 85, "2026-04-13", 1)
         rounds = self.repo.get_by_user(1)
-        round_id = rounds[0][0]
+        round_id = rounds[0].id
 
         deleted = self.repo.delete(round_id, 1)
 

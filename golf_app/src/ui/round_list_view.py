@@ -2,9 +2,22 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 class RoundListView:
-    def __init__(self, root, service, on_add):
+    """UI view for displaying the list of golf rounds.
+    This view shows all recorded rounds in a listbox and provides
+    buttons to add a new round, view statistics, and delete selected rounds.
+    """
+    def __init__(self, root, service, on_add, on_stats):
+        """Initializes the round list view.
+
+        Args:
+            root (tk.Widget): Parent widget (typically Tk root).
+            service (RoundService): Service used for managing rounds.
+            on_add (Callable): Callback function to navigate to the add round view.
+            on_stats (Callable): Callback function to navigate to the statistics view.
+        """
         self.service = service
         self.on_add = on_add
+        self.on_stats = on_stats
 
         self.round_ids = []
 
@@ -24,6 +37,12 @@ class RoundListView:
 
         ttk.Button(
             self.frame,
+            text="Tilastot",
+            command=self.on_stats
+        ).pack(pady=10)
+
+        ttk.Button(
+            self.frame,
             text="Poista kierros",
             command=self.handle_delete
         ).pack(pady=10)
@@ -31,6 +50,10 @@ class RoundListView:
         self.refresh()
 
     def handle_delete(self):
+        """Handles the deletion of a selected round.
+         Checks if a round is selected, confirms deletion with the user, and calls the service to delete the round. Refreshes the list after deletion.
+         Shows error messages if no round is selected or if deletion fails.
+        """
         selection = self.listbox.curselection()
 
         if not selection:
@@ -50,14 +73,20 @@ class RoundListView:
             messagebox.showerror("Virhe", str(e))
 
     def refresh(self):
+        """Refreshes the list of rounds displayed in the listbox.
+         Fetches the latest rounds from the service and updates the listbox.
+         Also updates the internal list of round IDs for reference when deleting.
+        """
         self.listbox.delete(0, tk.END)
         self.round_ids = []
         for r in self.service.get_rounds():
-            self.round_ids.append(r[0])
+            self.round_ids.append(r.id)
             self.listbox.insert(
                 tk.END,
-                f"{r[1]} — {r[2]} — {r[3]}"
+                f"{r.course} — {r.score} — {r.date}"
             )
 
     def destroy(self):
+        """Destroys the view frame.
+        """
         self.frame.destroy()
