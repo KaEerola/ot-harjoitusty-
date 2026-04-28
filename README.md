@@ -8,6 +8,7 @@ Teen kurssin harjoitustyönä golfsovelluksen, jonka avulla pystyy tarkastelemaa
 - [Changelog](golf_app/dokumentaatio/changelog.md)
 - [Tuntikirjanpito](golf_app/dokumentaatio/tuntikirjanpito.md)
 - [Vaatimusmäärittely](golf_app/dokumentaatio/vaatimusmäärittely.md)
+- [Käyttöohje](golf_app/dokumentaatio/kayttoohje.md)
 
 ## Release
 https://github.com/KaEerola/ot-harjoitusty-/releases/latest
