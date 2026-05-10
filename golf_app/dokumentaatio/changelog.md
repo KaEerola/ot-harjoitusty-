@@ -13,3 +13,8 @@
 - Käytäjä voi rajata tilastoja varten huomioon otettavia kierroksia
 - Testattu uudennettua Round luokkaa
 - Testattu AuthService luokkaa ja sen tuomia validaatioita ja käyttäjän tunnistamista
+## Viikko 7
+- Paranneltu tilastonäkymää
+- Lisätty testikattavuutta
+- Poistettu turhia tiedostoja
+- Paranneltu dokumentaatiota
