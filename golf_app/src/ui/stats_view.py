@@ -36,6 +36,15 @@ class StatsView:
             command=self._calculate
         ).pack(pady=10)
 
+        self.avg_label = ttk.Label(self.frame, text="Keskiarvo: -")
+        self.avg_label.pack(pady=5)
+
+        self.best_label = ttk.Label(self.frame, text="Paras tulos: -")
+        self.best_label.pack(pady=5)
+
+        self.count_label = ttk.Label(self.frame, text="Kierroksia: -")
+        self.count_label.pack(pady=5)
+
         ttk.Label(self.frame, text="Viimeiset kierrokset").pack(pady=5)
 
         self.n_var = tk.StringVar(value="5")
@@ -51,15 +60,6 @@ class StatsView:
 
         self.lastn_label = ttk.Label(self.frame, text="Viime kierrokset: -")
         self.lastn_label.pack(pady=5)
-
-        self.avg_label = ttk.Label(self.frame, text="Keskiarvo: -")
-        self.avg_label.pack(pady=5)
-
-        self.best_label = ttk.Label(self.frame, text="Paras tulos: -")
-        self.best_label.pack(pady=5)
-
-        self.count_label = ttk.Label(self.frame, text="Kierroksia: -")
-        self.count_label.pack(pady=5)
 
         self.comp_label = ttk.Label(self.frame, text="Viime 10 vs kaikki: -")
         self.comp_label.pack(pady=5)

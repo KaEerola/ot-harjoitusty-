@@ -107,26 +107,3 @@ class RoundRepository:
         conn.close()
 
         return deleted_rows
-
-    def update(self, round_id, course, score, date, user_id):
-        """Updates an existing round.
-
-        Args:
-            round_id (int): ID of the round to update.
-            course (str): Updated course name.
-            score (int): Updated score.
-            date (str): Updated date (format: "YYYY-MM-DD").
-            user_id (int): ID of the user (ensures ownership).
-        """
-        conn = self._connect()
-        cur = conn.cursor()
-
-        cur.execute("""
-            UPDATE rounds
-            SET course=?, score=?, date=?
-            WHERE id=? AND user=?
-        """, (course, score, date, round_id, user_id))
-
-        conn.commit()
-        conn.close()
-        

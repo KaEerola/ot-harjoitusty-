@@ -1,6 +1,9 @@
 import sqlite3
 
 def init_db():
+    """Initializes the database
+    """
+    
     conn = sqlite3.connect("golf.db")
     cur = conn.cursor()
 
