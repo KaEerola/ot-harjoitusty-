@@ -40,4 +40,10 @@ Yhteensä viikolla 9,5h
 
 Yhteensä viikolla 7,5h
 
-### Yhteensä projektiin käytetty aika tähän mennessä 33,5h
+## Viikko 8
+- Perjantai 2h
+- Sunnuntai 4h
+
+Yhteensä viikkolla 6h
+
+### Yhteensä projektiin käytetty aika tähän mennessä 39,5h
